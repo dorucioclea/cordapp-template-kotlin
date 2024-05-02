@@ -1,4 +1,4 @@
-# release-V5.2 cordapp-template-kotlin
+# release-V5.3 cordapp-template-kotlin
 
 This template repository provides:
 
@@ -6,7 +6,7 @@ This template repository provides:
 
 - A base Gradle configuration which brings in the dependencies you need to write and test a Corda 5 Cordapp.
 
-- A set of Gradle helper tasks, provided by the [Corda runtime gradle plugin](https://github.com/corda/corda-runtime-os/tree/release/os/5.2/tools/corda-runtime-gradle-plugin#readme), which speed up and simplify the development and deployment process.
+- A set of Gradle helper tasks, provided by the [Corda runtime gradle plugin](https://github.com/corda/corda-runtime-os/tree/release/os/5.3/tools/corda-runtime-gradle-plugin#readme), which speed up and simplify the development and deployment process.
 
 - Debug configuration for debugging a local Corda cluster.
 
@@ -29,13 +29,12 @@ In this app you can:
 4. Continue chatting within the chat entry with the counterparty. `UpdateChatFlow`
 
 ### Prerequisites
-- Corda CLI; version should match that of the Corda combined worker image used
 - Docker
 
 ### Setting up
 
 1. We will begin our test deployment with clicking the `startCorda`. This task will load up the combined Corda workers in docker.
-   A successful deployment will allow you to open the REST APIs at: https://localhost:8888/api/v5_2/swagger#. You can test out some of the
+   A successful deployment will allow you to open the REST APIs at: https://localhost:8888/api/v5_3/swagger#. You can test out some of the
    functions to check connectivity. (GET /cpi function call should return an empty list as for now.)
 2. We will now deploy the cordapp with a click of `vNodeSetup` task. Upon successful deployment of the CPI, the GET /cpi function call should now return the meta data of the cpi you just upload
 
