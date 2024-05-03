@@ -1,3 +1,5 @@
+apply plugin: 'org.springframework.boot'
+
 sourceSets {
     main {
         resources {
@@ -20,6 +22,10 @@ dependencies {
     implementation "org.apache.logging.log4j:log4j-slf4j2-impl:${log4j_version}"
     implementation "org.apache.logging.log4j:log4j-web:${log4j_version}"
     implementation "org.slf4j:jul-to-slf4j:$slf4j_version"
+}
+
+springBoot {
+    mainClass = "com.template.webserver.ServerKt"
 }
 
 /* The Client is the communication channel between the external and the node. This task will help you immediately
